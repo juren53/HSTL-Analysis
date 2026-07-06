@@ -1,0 +1,3 @@
+LLC's problem statement
+
+In the attached spreadsheet, I basically want Excel to find a Collection Name in the second tab based on the Collection # and add the Collection Name to the first tab. The first tab is an HMS export, and the second tab is pulled from our location guide. I'm trying to tell the formula to look for the value from A2 in the first tab ("HST-PCBP") and see where it exists in the second tab, and when it finds it in Column 2 in the second tab, enter the value from the same row in Column 1. It's returning "#N/A" as though "HST-PCBP" doesn't exist in the second tab, but it's in cell B:82, so I want it to return "Brown, Peter C. Papers."
