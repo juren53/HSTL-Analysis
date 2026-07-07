@@ -1,3 +1,5 @@
+<div align="right"><i>Last edit: 2026-07-07 04:44</i></div>
+
 # Walkthrough: `fill_collection_names.py`
 
 *A plain-English explanation of the Python concepts used in this code.*
