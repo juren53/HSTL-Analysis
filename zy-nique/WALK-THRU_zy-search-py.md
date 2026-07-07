@@ -46,7 +46,7 @@ matching_files = search_files(directory, search_query)
   in literal double quotes (`'"Senator Tom Connally meets"'`), the match
   only succeeds if the target text is *also* wrapped in double quotes
   (which the sample record isn't) — this looks like a leftover from the
-  original ChatGPT example (see `Conversation-w-ChatGPT-on-ZyDB-search.txt`)
+  original ChatGPT example (see `Notes/Conversation-w-ChatGPT-on-ZyDB-search.txt`)
   rather than intentional regex syntax. In practice this means the script
   as written won't match plain-text records like `67-1890.txt` unless the
   quotes are removed from `search_query`.
