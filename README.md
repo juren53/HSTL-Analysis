@@ -18,7 +18,7 @@ and data.
   a full line-by-line walkthrough.
 
 - [`audio-metadata-analysis/`](audio-metadata-analysis/) —
-  an HSTL Photo data task consisting of analysis and
+  an HSTL Audio data task consisting of analysis and
   reporting scripts for the HSTL Audio Metadata catalog export (moved from
   the `HST-Metadata-Audio` project's `analysis/` folder). See
   [`PROCESS_NOTES.md`](audio-metadata-analysis/PROCESS_NOTES.md) for details.
