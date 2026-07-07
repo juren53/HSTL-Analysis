@@ -2,7 +2,7 @@
 
 # Walkthrough: `fill_collection_names.py`
 
-*A plain-English explanation of the Python concepts used in this code.*
+*A detailed explanation of the Python concepts used in this code.*
 
 ## Purpose
 
