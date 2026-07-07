@@ -34,6 +34,6 @@ and data.
   data exports). See
   [`zy-search.py`](zy-nique/zy-search.py),
   [`WALK-THRU_zy-search-py.md`](zy-nique/WALK-THRU_zy-search-py.md),
-  [`README-HST-Zyimage-Project.md`](zy-nique/README-HST-Zyimage-Project.md), and
+  [`README.md`](zy-nique/README.md), and
   [`ZY Image Database Project - High-level Summary.pdf`](<zy-nique/ZY Image Database Project - High-level Summary.pdf>)
   for details. *(Last updated: 2023-01-08 14:10)*
