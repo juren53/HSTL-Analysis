@@ -4,7 +4,7 @@
 
 *A plain-English explanation of the Python concepts used in this code.*
 
-## Purpose, in detail
+## Purpose
 
 Takes an "Assets by Row Numbers" workbook that has a **Collection #** in column A of
 the Assets tab but no name in column B, looks each ID up in a **Collections** tab,

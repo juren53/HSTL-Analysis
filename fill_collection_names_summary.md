@@ -18,7 +18,7 @@ result as a **new** file (the original is never touched).
 
 `Collections` is the "answer key" — a complete ID → Name table.
 `Assets by Row Numbers` has the ID but is missing the name; this script closes
-that gap. *(Details: [Purpose](fill_collection_names.md#purpose-in-detail),
+that gap. *(Details: [Purpose](fill_collection_names.md#purpose),
 [Expected layout](fill_collection_names.md#expected-workbook-layout-in-detail))*
 
 ## Running it
