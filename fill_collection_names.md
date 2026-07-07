@@ -11,7 +11,7 @@ the Assets tab but no name in column B, looks each ID up in a **Collections** ta
 and writes the matching **Collection Name** into column B. The result is saved as a
 new file — the original workbook is never modified.
 
-### The problem, restated plainly
+### The problem
 
 Somewhere there's a single Excel file (a **workbook**) with (at least) two
 **sheets** (also called **tabs** — the labeled pages you click between at the
