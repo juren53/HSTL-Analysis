@@ -50,12 +50,12 @@ using a formula directly in the spreadsheet:
 The whole task is split across two functions covered in depth further below,
 each responsible for one half of the "lookup" idea:
 
-- `build_lookup` (see the [dedicated section](#3-build_lookupws-function-in-detail-lines-2941))
+- `build_lookup` (see the [dedicated section](#3-build_lookupws-function-lines-2941))
   reads the *reference table* — the `Collections` sheet — once, up front, and
   turns it into a fast in-memory structure (a Python **dict**) that can
   answer "what's the name for this ID?" instantly, without re-scanning the
   sheet for every single asset row.
-- `fill_names` (see the [dedicated section](#4-fill_namesinput_path-output_path-function-in-detail-lines-4491))
+- `fill_names` (see the [dedicated section](#4-fill_namesinput_path-output_path-function-lines-4491))
   does the actual row-by-row work over the `Assets by Row Numbers` sheet,
   using the dict `build_lookup` produced to fill in column B (or mark `#N/A`
   when nothing matches), then saves everything to a new file and prints a
@@ -72,7 +72,7 @@ this is enforced by the script always calling `wb.save(output_path)`
 section) with a filename different from wherever it read the input from —
 never overwriting the file it opened.
 
-## Inputs & outputs, in detail
+## Inputs & outputs
 
 - **Input** (default): `Assets by Row Numbers-2026-06-24-09-12-13.xlsx`
 - **Output** (default): `Assets by Row Numbers-filled.xlsx`
@@ -116,7 +116,7 @@ change anything about the script itself — it's the mechanism the *operating
 system* uses to hand the program a list of extra words (arguments) via
 `sys.argv`, which the script then reads from (see `sys.argv` in both the
 [imports](#1-imports-lines-710) and
-[entry point](#5-script-entry-point-in-detail-lines-94103) sections for the
+[entry point](#5-script-entry-point-lines-94103) sections for the
 full mechanics). Two consequences follow directly from how that reading logic
 works:
 
@@ -519,7 +519,7 @@ count starting at 0. That mismatch is why you'll see `- 1` in a couple of
 places further down, to convert from "spreadsheet column number" to "Python
 list position."
 
-### 3. `build_lookup(ws)` function, in detail (lines 29–41)
+### 3. `build_lookup(ws)` function (lines 29–41)
 
 ```python
 def build_lookup(ws) -> dict[str, str]:
@@ -762,7 +762,7 @@ stops existing (it was local to this function); only the value it pointed to
 lives on, now under whatever name the caller assigns it to (in `fill_names`,
 that's a variable also named `lookup`).
 
-### 4. `fill_names(input_path, output_path)` function, in detail (lines 44–91)
+### 4. `fill_names(input_path, output_path)` function (lines 44–91)
 
 ```python
 def fill_names(input_path: Path, output_path: Path) -> None:
@@ -1155,7 +1155,7 @@ is left completely untouched.
 - Finally, `print(f"\nSaved to: {output_path}")` confirms where the new file
   went, regardless of whether any rows were missing.
 
-### 5. Script entry point, in detail (lines 94–103)
+### 5. Script entry point (lines 94–103)
 
 ```python
 if __name__ == "__main__":
@@ -1341,7 +1341,7 @@ summary — happens as a consequence of this one call. If the `if not
 input_path.exists():` check above had triggered `sys.exit(...)`, the program
 would have already stopped before ever reaching this line.
 
-## Summary of behavior, in detail
+## Summary of behavior
 
 This final section ties the code details covered above back into a handful of
 overall guarantees the script provides — and explains, in each case, *exactly

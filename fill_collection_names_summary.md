@@ -32,7 +32,7 @@ python fill_collection_names.py [input.xlsx] [output.xlsx]
 - One argument → that file becomes the input; output still defaults.
 - Two arguments → both are overridden.
 
-*(Details: [Inputs & outputs](fill_collection_names.md#inputs--outputs-in-detail))*
+*(Details: [Inputs & outputs](fill_collection_names.md#inputs--outputs))*
 
 ## How it works, in three parts
 
@@ -40,7 +40,7 @@ python fill_collection_names.py [input.xlsx] [output.xlsx]
    into a Python dict: `{"HST-PCBP": "Brown, Peter C. Papers", ...}`. IDs and
    names are trimmed of whitespace. An ID with a blank name is still added to
    the dict — just mapped to `""`. *(Details:
-   [build_lookup walkthrough](fill_collection_names.md#3-build_lookupws-function-in-detail-lines-2941))*
+   [build_lookup walkthrough](fill_collection_names.md#3-build_lookupws-function-lines-2941))*
 
 2. **`fill_names(input_path, output_path)`** opens the workbook, calls
    `build_lookup`, then walks every row of `Assets by Row Numbers`:
@@ -51,13 +51,13 @@ python fill_collection_names.py [input.xlsx] [output.xlsx]
 
    It then saves to the output file and prints how many rows were filled,
    plus up to the first 20 unmatched IDs (with row numbers). *(Details:
-   [fill_names walkthrough](fill_collection_names.md#4-fill_namesinput_path-output_path-function-in-detail-lines-4491))*
+   [fill_names walkthrough](fill_collection_names.md#4-fill_namesinput_path-output_path-function-lines-4491))*
 
 3. **The entry point** (`if __name__ == "__main__":`) only runs when the
    script is executed directly. It resolves the input/output paths from
    command-line arguments (falling back to defaults), exits with an error if
    the input file doesn't exist, and then calls `fill_names(...)`. *(Details:
-   [Entry point walkthrough](fill_collection_names.md#5-script-entry-point-in-detail-lines-94103))*
+   [Entry point walkthrough](fill_collection_names.md#5-script-entry-point-lines-94103))*
 
 ## Behavior worth knowing
 
@@ -73,4 +73,4 @@ python fill_collection_names.py [input.xlsx] [output.xlsx]
   (`KeyError`); a wrong column number or header-row count fails silently,
   quietly producing bad data instead of an error.
 
-*(Details: [Summary of behavior](fill_collection_names.md#summary-of-behavior-in-detail))*
+*(Details: [Summary of behavior](fill_collection_names.md#summary-of-behavior))*
