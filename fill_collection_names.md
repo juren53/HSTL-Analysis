@@ -167,7 +167,7 @@ the entry point's only check — failing later, with whatever error
 `openpyxl` itself raises when it can't parse the file, rather than a
 friendly message from this script.
 
-## Expected workbook layout, in detail
+## Expected workbook layout
 
 | Sheet | Column A | Column B |
 |---|---|---|
