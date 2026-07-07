@@ -1,7 +1,6 @@
-# `fill_collection_names.py` — Quick Reference
+# `fill_collection_names.py` — how it works (short version)
 
-*A condensed overview. For a full, line-by-line explanation of every piece of
-Python used here — written for readers new to the language — see
+*A condensed overview of how it works. For a detailed look at the Python code see
 [`fill_collection_names.md`](fill_collection_names.md).*
 
 ## What it does
