@@ -1,0 +1,60 @@
+JU
+In python, I would like to search a collection of files 
+similar to this:
+
+
+<accession_number> 67-1890 </accession_number>
+11/20/47 
+
+Senator Tom Connally meets and shakes hands with Admiral 
+Paulus P. Powell as they stand waiting for Secretary Marshall's 
+arrival at the Rio Airport.
+From:
+The album., American-Chamber of Commerce for Brazil
+<xref image="H:\Photos\67\J1890.TIF|0">image: </xref>
+-------^L
+
+The search could be multi-word contained in quotes 
+
+ChatGPT
+Sure! Here's an example of how you can search for multi-word phrases contained in quotes in a collection of files in Python:
+
+python
+Copy code
+import os
+import re
+
+# Directory containing the files to search
+directory = 'path/to/directory/'
+
+# Search query
+search_query = '"Senator Tom Connally meets"'
+
+# Function to search for the query in each file
+def search_files(directory, search_query):
+    results = []
+    for filename in os.listdir(directory):
+        if filename.endswith('.txt'):  # Change the file extension if necessary
+            with open(os.path.join(directory, filename), 'r') as file:
+                file_contents = file.read()
+                if re.search(search_query, file_contents):
+                    results.append(filename)
+    return results
+
+# Search for the query in the files
+matching_files = search_files(directory, search_query)
+
+# Print the matching files
+if len(matching_files) > 0:
+    print('Matching files:')
+    for filename in matching_files:
+        print(filename)
+else:
+    print('No matching files found.')
+
+
+Note that in this example, the search query is specified as a string with double quotes around the multi-word phrase to search for. The re.search() function from the re module is used to perform the regular expression search in the file contents. The search_files() function takes a directory path and a search query as inputs, and returns a list of filenames that contain the search query. You can customize the file extension to search for by changing the value in filename.endswith() to the appropriate file extension for your collection of files. Additionally, you may need to modify the file reading logic depending on the format of your files. This example assumes that each file contains plain text. If your files are in a different format, such as XML or HTML, you may need to use appropriate parsing libraries to extract the relevant text for searching. Please let me know if you have any further questions! <|endoftext|>
+
+
+
+

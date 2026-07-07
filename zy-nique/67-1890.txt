@@ -1,0 +1,17 @@
+In python, I would like to search a collection of files 
+similar to this:
+
+
+<accession_number> 67-1890 </accession_number>
+11/20/47 
+
+Senator Tom Connally meets and shakes hands with Admiral 
+Paulus P. Powell as they stand waiting for Secretary Marshall's 
+arrival at the Rio Airport.
+From:
+The album., American-Chamber of Commerce for Brazil
+<xref image="H:\Photos\67\J1890.TIF|0">image: </xref>
+-------^L
+
+The search could be multi-word contained in quotes 
+
