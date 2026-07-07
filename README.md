@@ -1,3 +1,5 @@
+<div align="right"><i>Last edit: 2026-07-07 08:53</i></div>
+
 # HSTL-Analysis
 
 A collection of ad-hoc data analysis tasks supporting Harry S. Truman
