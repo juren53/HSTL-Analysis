@@ -16,13 +16,14 @@ and data.
   [`fill_collection_names_summary.md`](collection-names/fill_collection_names_summary.md)
   for a quick overview, or
   [`fill_collection_names.md`](collection-names/fill_collection_names.md) for
-  a full line-by-line walkthrough.
+  a full line-by-line walkthrough. *(Last updated: 2026-07-07 05:36)*
 
 - [`audio-metadata-analysis/`](audio-metadata-analysis/) —
   an HSTL Audio data task consisting of analysis and
   reporting scripts for the HSTL Audio Metadata catalog export (moved from
   the `HST-Metadata-Audio` project's `analysis/` folder). See
   [`PROCESS_NOTES.md`](audio-metadata-analysis/PROCESS_NOTES.md) for details.
+  *(Last updated: 2026-07-07 05:36)*
 
 - [`zy-nique/`](zy-nique/) —
   an HSTL Photo data task that searches the legacy ZyIMAGE photo database
@@ -30,4 +31,4 @@ and data.
   caption or accession number. See
   [`zy-search.py`](zy-nique/zy-search.py) and
   [`ZY Image Database Project - High-level Summary.pdf`](<zy-nique/ZY Image Database Project - High-level Summary.pdf>)
-  for details.
+  for details. *(Last updated: 2026-07-07 08:44)*
