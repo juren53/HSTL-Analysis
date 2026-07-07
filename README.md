@@ -26,9 +26,14 @@ and data.
   *(Last updated: 2026-06-08-2026)*
 
 - [`zy-nique/`](zy-nique/) —
-  an HSTL Photo data task that searches the legacy ZyIMAGE photo database
-  export (accession-number-tagged text records) for matching text, e.g. by
-  caption or accession number. See
-  [`zy-search.py`](zy-nique/zy-search.py) and
+  an HSTL Photo data task built around the legacy ZyIMAGE photo database:
+  searches accession-number-tagged text records for matching text (e.g. by
+  caption or accession number), plus the full ZyImage Database Project
+  archive merged in from the standalone `HST-Zyimage-Project` repo
+  (background docs, code, documentation, notes, sample reports, and raw
+  data exports). See
+  [`zy-search.py`](zy-nique/zy-search.py),
+  [`WALK-THRU_zy-search-py.md`](zy-nique/WALK-THRU_zy-search-py.md),
+  [`README-HST-Zyimage-Project.md`](zy-nique/README-HST-Zyimage-Project.md), and
   [`ZY Image Database Project - High-level Summary.pdf`](<zy-nique/ZY Image Database Project - High-level Summary.pdf>)
   for details. *(Last updated: 2023-01-08 14:10)*
