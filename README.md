@@ -23,9 +23,10 @@ and data.
   the `HST-Metadata-Audio` project's `analysis/` folder). See
   [`PROCESS_NOTES.md`](audio-metadata-analysis/PROCESS_NOTES.md) for details.
 
-- [`zy-nique/`](zy-nique/) — searches the legacy ZyIMAGE photo database export
-  (accession-number-tagged text records) for matching text, e.g. by caption
-  or accession number. See
+- [`zy-nique/`](zy-nique/) —
+  an HSTL Photo data task that searches the legacy ZyIMAGE photo database
+  export (accession-number-tagged text records) for matching text, e.g. by
+  caption or accession number. See
   [`zy-search.py`](zy-nique/zy-search.py) and
   [`ZY Image Database Project - High-level Summary.pdf`](<zy-nique/ZY Image Database Project - High-level Summary.pdf>)
   for details.
