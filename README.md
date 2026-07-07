@@ -3,8 +3,9 @@
 # HSTL-Analysis
 
 A collection of ad-hoc data analysis tasks supporting Harry S. Truman
-Presidential Library (HSTL) metadata projects. Each task lives in its own
-subdirectory, self-contained with its own code, documentation, and data.
+Presidential Library (HSTL) Audio Visual metadata projects. Each task lives
+in its own subdirectory, self-contained with its own code, documentation,
+and data.
 
 ## Tasks
 
