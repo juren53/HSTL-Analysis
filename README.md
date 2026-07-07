@@ -23,7 +23,7 @@ and data.
   reporting scripts for the HSTL Audio Metadata catalog export (moved from
   the `HST-Metadata-Audio` project's `analysis/` folder). See
   [`PROCESS_NOTES.md`](audio-metadata-analysis/PROCESS_NOTES.md) for details.
-  *(Last updated: 2026-07-07 05:36)*
+  *(Last updated: 2026-06-08-2026)*
 
 - [`zy-nique/`](zy-nique/) —
   an HSTL Photo data task that searches the legacy ZyIMAGE photo database
@@ -31,4 +31,4 @@ and data.
   caption or accession number. See
   [`zy-search.py`](zy-nique/zy-search.py) and
   [`ZY Image Database Project - High-level Summary.pdf`](<zy-nique/ZY Image Database Project - High-level Summary.pdf>)
-  for details. *(Last updated: 2026-07-07 08:44)*
+  for details. *(Last updated: 2023-01-08 14:10)*
