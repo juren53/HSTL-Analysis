@@ -1,0 +1,41 @@
+Using Python, I need to find the next word in a string.  Here is the string:
+
+93/ZY2/00331.TXT:           <accession_number> 93-331 </accession_number>-1 thru 93-331-3
+
+I would like to find the next word after "thru"
+
+
+
+
+your_string = "This is a string"
+list_of_words = your_string.split()
+next_word = list_of_words[list_of_words.index("thru") + 1]
+
+==========================================
+with open('59/ZY1/00186-4.TXT', 'r') as file:
+    your_string = file.read().replace('\n', '')
+
+your_string = your_string.replace("thru", " thru ")
+
+list_of_words = your_string.split()
+next_word = list_of_words[list_of_words.index("thru") + 1]
+print(next_word)
+
+
+------------------------------------------
+
+
+
+txt = "one one was a race horse, two two was one too."
+
+x = txt.replace("one", "three")
+
+print(x)
+
+
+txt = "accession_number> 59-309  </accession_number>thru 59-315"
+x = txt.replace("thru", " thru")
+print(x)
+
+
+

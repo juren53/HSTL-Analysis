@@ -1,0 +1,20 @@
+
+
+97-2038.txt:﻿<accession_number>97-2038 thru 97-2044</accession_number>
+
+59/ZY1/00454.TXT:      <accession_number> 59-454  </accession_number>thru 59-459
+
+58/COMMENT/00759.TXT:    <accession_number> 58-759 </accession_number>-1 thru 58-759-7
+
+58/COMMENT/00346.TXT:    <accession_number> 58-346  </accession_number>thru 58-347                                                                                          
+
+58/00077.TXT:        <accession_number> 58-77 </accession_number>-1 thru
+
+59/ZY1/00257.TXT:       <accession_number> 59-257  </accession_number>thru
+
+59/ZY1/00348.TXT:       <accession_number> 59-348  </accession_number>thru 59-354
+
+59/ZY1/00799-19.TXT:        <accession_number> 59-799 </accession_number>-19 thru 59-799-27  
+
+
+

@@ -1,0 +1,85 @@
+#!/usr/bin/python3
+# zy-search.py   
+# This is a GUI program that allows a user to do simple string searches
+# on ZyImage files and chose the file from a pick list for viewing.
+
+# Fri 07 Apr 2023 12:49:16 PM CDT
+#====================================================================
+
+import os
+import tkinter as tk
+from tkinter import filedialog, scrolledtext
+
+class AccessionViewer:
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.title("ZyNique - unique accession items from the ZyImage system     Ver 0.1 2023-04-22")
+
+        # Create a frame for search and picklist
+        self.frame_search = tk.Frame(self.root)
+        self.frame_search.pack(side=tk.TOP, fill=tk.X, padx=5, pady=5)
+
+        # Create a label and entry for search string
+        tk.Label(self.frame_search, text="Search:").pack(side=tk.LEFT)
+        self.entry_search = tk.Entry(self.frame_search, width=30)
+        self.entry_search.pack(side=tk.LEFT, padx=5)
+
+        # Create a button to start the search
+        tk.Button(self.frame_search, text="Search", command=self.search_files).pack(side=tk.LEFT)
+
+        # Create a frame for the picklist
+        self.frame_picklist = tk.Frame(self.root)
+        self.frame_picklist.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=5, pady=5)
+
+        # Create a scrollbar and listbox for picklist
+        self.scrollbar_picklist = tk.Scrollbar(self.frame_picklist)
+        self.scrollbar_picklist.pack(side=tk.RIGHT, fill=tk.Y)
+        self.listbox_picklist = tk.Listbox(self.frame_picklist, yscrollcommand=self.scrollbar_picklist.set)
+        self.listbox_picklist.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.scrollbar_picklist.config(command=self.listbox_picklist.yview)
+
+        # Bind double-click event on the picklist
+        self.listbox_picklist.bind("<Double-Button-1>", self.view_file)
+
+        # Create a text widget for file content
+        self.text_file_content = scrolledtext.ScrolledText(self.root, wrap=tk.WORD)
+        self.text_file_content.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=5, pady=5)
+
+    def search_files(self):
+        # Clear the picklist and file content text widget
+        self.listbox_picklist.delete(0, tk.END)
+        self.text_file_content.delete(1.0, tk.END)
+
+        # Get the search string from the entry widget
+        search_string = self.entry_search.get()
+
+        # Traverse the directory and its subdirectories
+        for root, dirs, files in os.walk("/home/juren/Projects/HST-Zyimage-Project/tmp"):
+            # Iterate through files and check if they contain the search string
+            for file in files:
+                filepath = os.path.join(root, file)
+                if os.path.isfile(filepath) and filepath.endswith(".txt"):
+                    with open(filepath, "r") as f:
+                        file_content = f.read()
+                        if search_string in file_content:
+                            # Add the file path to the picklist
+                            self.listbox_picklist.insert(tk.END, filepath)
+
+    def view_file(self, event):
+            # Clear the file content text widget
+            self.text_file_content.delete(1.0, tk.END)
+
+            # Get the selected file path from the picklist
+            selected_index = self.listbox_picklist.curselection()
+            if not selected_index:
+                return
+            selected_path = self.listbox_picklist.get(selected_index)
+
+            # Display the file content in the text widget
+            with open(selected_path, "r") as f:
+                file_content = f.read()
+                self.text_file_content.insert(tk.END, file_content)
+
+if __name__ == "__main__":
+    app = AccessionViewer()
+    app.root.mainloop()

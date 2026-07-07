@@ -1,0 +1,42 @@
+
+Report of First Iteration of the ZyImage Evaluation
+     
+This report summaries the results of the process that created Accession Number lists for each database to evaluate the data in the Zimage
+
+                        ANs
+
+HST PDB -     74195
+
+ZyImage -      30516  [comination of the NEWCARD, TEXT and TRUMAN directories]
+
+Unique ANs -  12992  [ANs in ZyImage not found in HST PDB]
+
+
+AN lists were produced by extracting AN numbers that appear between
+<accession_number> and </accession_number> tags
+
+e.g. <accession_number> 93-317 </accession_number>
+
+Following this first end-to-end run, there are now
+
+
+Conclusions and Suggestions
+
+The number of 'false positives' in the Unique AN list of nearly 13,000 is likely to be 80-90%.
+
+The false positives are a result of:
+
+    - malformed ANs are created by:
+
+            - ANs missing dash seperators
+            - spaces inserted in ANs
+            - no spaces between ANs and brackets
+
+Possible next steps:
+
+  adapt existing commands and code to help clean up data anomalies
+ 
+  adapt existing commands and code to address the compound "thru" entries problem
+
+
+

@@ -1,0 +1,29 @@
+HST ZY Archiving
+
+Recursively search each file in each directory and print the line found
+grep -r "<accession_number>" .
+
+Recursively search each file in each directory and print the 3rd
+column of the line found
+grep -r "<accession_number>" . | awk '{print $3}' | less
+
+
+sed -r 's/{{regular_expression}}/{{replace}}/g' {{filename}}
+
+sed -r 's/<ac/ <ac/g'
+
+
+sed -r 's/<ac/ <ac/g' zy-ans-all.txt > zy-ans-all-2.txt
+
+sed -r 's/</ac/ </ac/g' zy-ans-all-2.txt > zy-ans-all-3.txt
+
+
+Prints lines with accession numbers
+grep -r "<accession_number>" zy-ans-all-2.txt | awk '{print $3}' | less
+
+Prints just accession numbers
+grep -o '>.*</' zy-ans-all-2.txt | sed 's/\(<\|<\/>\)//g' | l
+
+Prints just accession numbers [better]
+awk -F'[><]' '{print $3}' zy-ans-all-2.txt > zy-ans-all-3.txt
+

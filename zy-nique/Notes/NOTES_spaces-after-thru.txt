@@ -1,0 +1,42 @@
+grep "thru                 " | wc -l
+          1234567890123456789
+
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru    " | wc -l
+16
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru   " | wc -l
+28
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru  " | wc -l
+67
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru " | wc -l
+1619
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru" | wc -l
+2027
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru     " | wc -l
+11
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru      " | wc -l
+9
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru       " | wc -l
+8
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru        " | wc -l
+6
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru         " | wc -l
+6
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru          " | wc -l
+4
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru           " | wc -l
+3
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru            " | wc -l
+2
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru             " | wc -l
+2
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru              " | wc -l
+2
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru               " | wc -l
+1
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru                " | wc -l
+1
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru                 " | wc -l
+0
+juren@JAUs-Latitude-E6410-no3:~/Projects/HST-Zyimage-Project/ZyFiles/TEXT$ grep -r "<accession_number>" * | grep "thru                " | wc -l  
+1
+
