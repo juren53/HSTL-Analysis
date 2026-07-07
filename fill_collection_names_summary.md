@@ -1,3 +1,5 @@
+<div align="right"><i>Last edit: 2026-07-07 04:41</i></div>
+
 # `fill_collection_names.py` — how it works (short version)
 
 *A condensed overview of how it works. For a detailed look at the Python code see

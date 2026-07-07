@@ -1,3 +1,4 @@
+# Last edit: 2026-07-07 04:41
 """
 Reads 'Assets by Row Numbers-*.xlsx', looks up each Collection # in the
 Collections tab, and writes the matching Collection Name into column B of
