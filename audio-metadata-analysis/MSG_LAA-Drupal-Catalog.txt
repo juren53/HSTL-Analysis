@@ -1,0 +1,29 @@
+
+Here's my best attempt at explaining the complexities of sound metadata.
+
+We have metadata coming from two places: 
+ 
+1. the NARA catalog (for sound published as of a couple of years ago with potentially wrong or duplicate records)
+
+2. the Drupal website (for sound that is currently published, as well as unpublished). This data is more accurate for the published sound.
+
+I am attaching examples exports of each here. I deleted a lot of the columns that are unnecessary.
+
+Here are actions I would like to take with this data:
+
+Priority 1. I would like to compare each export spreadsheet using the NAID columns in both. 
+
+- Where they have matching NAIDs, I would like the data for those records to be combined into a single spreadsheet tab. This will result in an unwieldy tab with lots of columns, but I would like to see everything together before I start working with it.
+
+- We know for certain that all the descriptions will need to be updated in the NARA catalog because they are all lacking the Production and Copyright. Find a way to automate creating a new tab [or spread sheet] that isolates five fields: NAID; Accession number; scopeAndContentNote from Catalog; and Description and Production and Copyright from Drupal.
+
+- Where the data differs between the equivalent Catalog and Drupal fields, we will need to update those fields. This will most likely happen in the TITLE field so let's start there. We will need to find a way to COMPARE the data in the TITLE column of the Catalog data and the Drupal data. Where they do not match, let's try to find a way to automate creating a new tab that isolates four fields: NAID; Accession Number; title from the Catalog, and title from Drupal.
+
+- We will also need to compare data for Accession number and Local Identifier. Where they do not match, let's try to find a way to automate creating a new tab that isolates four fields: NAID; Local Identifier from the Catalog; and Accession Number from Drupal.
+
+- Where there are NAIDS in the NARA catalog but not in Drupal, I would like those records to appear in a separate spreadsheet tab. 
+
+Priority 2.  Using the Drupal export, isolate all published items that DON'T have NAIDS. This might be about 300-400 records.
+
+- Find a way to adapt the Drupal data as much as possible into the Sound Recording bulk cataloging template. An example of the template is attached, though this is NOT the final version - - it is still a work in progress.
+
