@@ -9,7 +9,8 @@ and data.
 
 ## Tasks
 
-- [`collection-names/`](collection-names/) — an HSTL Photo data task that looks up each Collection # in the
+- [`collection-names/`](collection-names/) —
+  an HSTL Photo data task that looks up each Collection # in the
   Assets sheet against the Collections sheet and fills in the matching
   Collection Name. See
   [`fill_collection_names_summary.md`](collection-names/fill_collection_names_summary.md)
