@@ -1,4 +1,4 @@
-<div align="right"><i>Last edit: 2026-07-07 11:16</i></div>
+<div align="right"><i>Last edit: 2026-07-08 20:17</i></div>
 
 # Walkthrough: `fill_collection_names.py`
 
