@@ -13,9 +13,10 @@ new file — the original workbook is never modified.
 
 ### The problem
 
-Somewhere there's a single Excel file (a **workbook**) with (at least) two
-**sheets** (also called **tabs** — the labeled pages you click between at the
-bottom of an Excel window):
+Somewhere there's a single Excel file (a **workbook**) — in this script's
+default case, `Assets by Row Numbers-2026-06-24-09-12-13.xlsx` — with (at
+least) two **sheets** (also called **tabs** — the labeled pages you click
+between at the bottom of an Excel window):
 
 - A `Collections` sheet that acts like a small reference table: one row per
   collection, pairing a short ID code (like `HST-PCBP`) with its full,
