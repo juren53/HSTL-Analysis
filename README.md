@@ -1,4 +1,4 @@
-<div align="right"><i>Last edit: 2026-07-09 19:50</i></div>
+<div align="right"><i>Last edit: 2026-07-09 19:51</i></div>
 
 # HSTL-Analysis
 
@@ -22,8 +22,9 @@ and data.
   an HSTL Audio data task consisting of analysis and
   reporting scripts for the HSTL Audio Metadata catalog export (moved from
   the `HST-Metadata-Audio` project's `analysis/` folder). See
-  [`PROCESS_NOTES.md`](audio-metadata-analysis/PROCESS_NOTES.md) for details.
-  *(Last updated: 2026-06-08-2026)*
+  [`README.md`](audio-metadata-analysis/README.md) for an overview, or
+  [`PROCESS_NOTES.md`](audio-metadata-analysis/PROCESS_NOTES.md) for the full
+  tab-by-tab details. *(Last updated: 2026-07-09 19:51)*
 
 - [`zy-nique/`](zy-nique/) —
   an HSTL Photo data task built around the legacy ZyIMAGE photo database:
