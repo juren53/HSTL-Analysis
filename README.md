@@ -1,4 +1,4 @@
-<div align="right"><i>Last edit: 2026-07-07 13:31</i></div>
+<div align="right"><i>Last edit: 2026-07-09 19:50</i></div>
 
 # HSTL-Analysis
 
@@ -12,11 +12,11 @@ and data.
 - [`collection-names/`](collection-names/) —
   an HSTL Photo data task that looks up each Collection # in the
   Assets sheet against the Collections sheet and fills in the matching
-  Collection Name. See
-  [`fill_collection_names_summary.md`](collection-names/fill_collection_names_summary.md)
-  for a quick overview, or
+  Collection Name. See [`README.md`](collection-names/README.md) for an
+  overview, [`fill_collection_names_summary.md`](collection-names/fill_collection_names_summary.md)
+  for a condensed walkthrough, or
   [`fill_collection_names.md`](collection-names/fill_collection_names.md) for
-  a full line-by-line walkthrough. *(Last updated: 2026-07-07 05:36)*
+  the full line-by-line version. *(Last updated: 2026-07-09 19:50)*
 
 - [`audio-metadata-analysis/`](audio-metadata-analysis/) —
   an HSTL Audio data task consisting of analysis and
