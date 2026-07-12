@@ -1,6 +1,6 @@
-<div align="right"><i>Last edit: 2026-07-09 19:56</i></div>
+<div align="right"><i>Last edit: 2026-07-12 09:39</i></div>
 
-# HSTL-Analysis
+# HSTL AV Data Analysis Project
 
 A collection of ad-hoc data analysis tasks supporting Harry S. Truman
 Presidential Library (HSTL) Audio Visual metadata projects. Each task lives
